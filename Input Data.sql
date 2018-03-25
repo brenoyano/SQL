@@ -1,0 +1,1 @@
+COPY consumer_complaints FROM 'C:\Users\Breno Yano\Desktop\SDC SQL COURSE\SQL\DATA.csv' DELIMITER ',' CSV HEADER;
