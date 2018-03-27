@@ -11,5 +11,16 @@
 <li>Extract all the rows with the word "late" in the issue field.</li>
 </ul>
 
+For the first challenge item i decided to do something more interative so, for that i did the following query on Tableau 10.5
+SELECT company, product_name, issue
+FROM consumer_complaints
+WHERE date_sent = date_received
+
+After that i created a Dashboar so the user can not only see how many complaints were done, but also control which company, product and type of issue that was rceived.
+
+
+
+
+
 References
 1º Challenge Source: http://www.consumerfinance.gov/data-research/consumer-complaints/
