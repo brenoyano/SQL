@@ -1,4 +1,4 @@
-<img src="https://github.com/brenoyano/SQL/blob/master/2000px-Applications-database.svg.png" width="65">
+<img src="https://github.com/brenoyano/SQL/blob/master/Img/2000px-Applications-database.svg.png" width="65">
 <h3>This repository have the code and analysis used during the challanges of Super Data Science SQL & Database Design A-Z course.</h3>
 
 <h4>Challenge One:</h4>
@@ -17,6 +17,8 @@ FROM consumer_complaints
 WHERE date_sent = date_received
 
 After that i created a Dashboar so the user can not only see how many complaints were done, but also control which company, product and type of issue that was rceived.
+<img src="https://github.com/brenoyano/SQL/blob/master/Img/Dashboard.PNG" width="900">
+If you want to see this dashboard and interect with it you can access it by clicking <a href="https://public.tableau.com/profile/brenoyano#!/vizhome/SQLChallenge/Painel1">Here</a> 
 
 
 
