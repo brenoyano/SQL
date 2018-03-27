@@ -21,8 +21,19 @@ After that i created a Dashboar so the user can not only see how many complaints
 If you want to see this dashboard and interect with it you can access it by clicking <a href="https://public.tableau.com/profile/brenoyano#!/vizhome/SQLChallenge/Painel1">Here</a> 
 
 
+The second and third part (Extract the complaints received in New York / new york and california) were also simple because the only diference was that in WHERE were used state_name = 'NY' and WHERE = state_name = 'NY' OR state name = 'CA'
+SELECT company, product_name, issue, state_name
+FROM consumer_complaints
+WHERE state_name = 'NY' OR state_name = 'CA'
 
+For the fourth and fifth part was used wild cards.
+SELECT company, product_name, issue, state_name
+FROM consumer_complaints
+WHERE LOWER(product_name) LIKE '%credit%'
 
+SELECT company, product_name, issue, state_name
+FROM consumer_complaints
+WHERE LOWER(issue) LIKE '%late%'
 
 References
 1º Challenge Source: http://www.consumerfinance.gov/data-research/consumer-complaints/
