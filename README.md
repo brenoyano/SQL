@@ -55,3 +55,22 @@ You have been tasked  to upload the dataset into a Database and perform the foll
   <li>Order the platforms by thier longevity in ascending order (i.e. the platform which was available for the longest at the bottom)</li>
   <li>Demonstrate how to deal with the Game_Year column if the client wants to convert it to a different data type</li>
   <li>Provide recommendation on how to deal with missing data in the file</li>
+  
+  <h4>Solution for the Second Challenge</h4>
+  First of all, after the creation of the two tables console_games and console_date, for the first task was created a new column called global_sales with the the code bellow:
+  
+  ALTER TABLE console_games
+  ADD COLUMN global_sales float8;
+  
+  Second it were summed the values of each continent sales to get the Global Sales value for each game:
+  UPDATE console_games
+  SET global_sales = na_sales + eu_sales + jp_sales + other_sales
+  
+  Third a new column called global_na_sales_percentage was created and populated to show the percentage of Global Sales were made in North America by game:
+  ALTER TABLE console_games
+  ADD COLUMN global_na_sales_percentage float8;
+  
+  UPDATE console_games
+  SET global_na_sales_percentage = na_sales/global_sales * 100
+  WHERE global_sales > 0;
+  
