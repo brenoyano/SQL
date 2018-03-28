@@ -67,8 +67,8 @@ You have been tasked  to upload the dataset into a Database and perform the foll
   SET global_sales = na_sales + eu_sales + jp_sales + other_sales
   
   Third a new column called global_na_sales_percentage was created and populated to show the percentage of Global Sales were made in North America by game:
-  ALTER TABLE console_games
-  ADD COLUMN global_na_sales_percentage float8;
+  <h6>ALTER TABLE console_games
+  ADD COLUMN global_na_sales_percentage float8;</h6>
   
   UPDATE console_games
   SET global_na_sales_percentage = na_sales/global_sales * 100
