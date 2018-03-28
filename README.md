@@ -37,3 +37,21 @@ WHERE LOWER(issue) LIKE '%late%'
 
 References
 1º Challenge Source: http://www.consumerfinance.gov/data-research/consumer-complaints/
+
+<h4> Challenge 2 </h4>
+
+You are an analytics consultant helping a console games company conduct market research. You have been suppied a dataset consisting of two files:
+<ol>
+  <li> A historic list of all console games released between 1980 and 2015.</li>
+  <li> A historic list of all console plataforms (such as Wii, Play Station, Xbox) and information about them</li>
+  </ol>
+You have been tasked  to upload the dataset into a Database and perform the following analytics:
+
+<ul>
+  <li>Calculate what %  of Global Sales were made in North America</li>
+  <li>Extract a view of console game titles ordered by platform name in ascending order and year of release in descending order</li>
+  <li>For each game title extract the first four letters of the publisher's name</li>
+  <li>Display all consoles platforms which were released either just before Black Friday or just before Christmas (in any year)</li>
+  <li>Order the platforms by thier longevity in ascending order (i.e. the platform which was available for the longest at the bottom)</li>
+  <li>Demonstrate how to deal with the Game_Year column if the client wants to convert it to a different data type</li>
+  <li>Provide recommendation on how to deal with missing data in the file</li>
